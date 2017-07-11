@@ -8,19 +8,23 @@ namespace EjercicioEntregar2
 {
     public class Turbomix
     {
+        public IBascula Bascula { get; set; }
+        public ICocina Cocina { get; set; }
+
+        public Turbomix(IBascula _Bascula, ICocina _Cocina)
+        {
+            this.Bascula = _Bascula;
+            this.Cocina = _Cocina;
+        }
+
         public Plato PesarYCocinar(Alimento mAlimento1, Alimento mAlimento2)
         {
-            float Peso1 = Pesar(mAlimento1);
-            float Peso2 = Pesar(mAlimento2);
-            CocinarUtils mCocinarUtils = new CocinarUtils();
-            mCocinarUtils.Calentar(mAlimento1, mAlimento2);
+            float Peso1 = Bascula.Pesar(mAlimento1);
+            float Peso2 = Bascula.Pesar(mAlimento2);
+            Cocina.Calentar(mAlimento1, mAlimento2);
 
             return new Plato(mAlimento1, mAlimento2);
         }
-        public float Pesar(Alimento mAlimento)
-        {
-            return mAlimento.Peso;
-        }
-        
+
     }
 }

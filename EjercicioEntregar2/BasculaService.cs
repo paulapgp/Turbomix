@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace EjercicioEntregar2
 {
-    class CocinarUtils
+    public class BasculaService : IBascula
     {
-        public void Calentar(Alimento mAlimento1, Alimento mAlimento2) {
-            // TODO
+        public float Pesar(Alimento mAlimento)
+        {
+            return mAlimento.Peso;
         }
-
-
     }
 }
