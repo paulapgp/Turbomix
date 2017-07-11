@@ -1,0 +1,5 @@
+c:\users\usuario\documents\visual studio 2015\Projects\EjercicioEntregar2\EjercicioEntregar2\bin\Debug\EjercicioEntregar2.dll
+c:\users\usuario\documents\visual studio 2015\Projects\EjercicioEntregar2\EjercicioEntregar2\bin\Debug\EjercicioEntregar2.pdb
+c:\users\usuario\documents\visual studio 2015\Projects\EjercicioEntregar2\EjercicioEntregar2\obj\Debug\EjercicioEntregar2.csprojResolveAssemblyReference.cache
+c:\users\usuario\documents\visual studio 2015\Projects\EjercicioEntregar2\EjercicioEntregar2\obj\Debug\EjercicioEntregar2.dll
+c:\users\usuario\documents\visual studio 2015\Projects\EjercicioEntregar2\EjercicioEntregar2\obj\Debug\EjercicioEntregar2.pdb
