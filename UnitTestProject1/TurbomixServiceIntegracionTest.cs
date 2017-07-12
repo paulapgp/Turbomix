@@ -15,13 +15,15 @@ namespace UnitTestProject1
 
             TurbomixService sut = new TurbomixService(basculaService, cocinaService);
             Alimento mAlimento1 = new Alimento();
-            mAlimento1.Nombre = "Curry";
+            mAlimento1.Nombre = "Espagueti";
             mAlimento1.Peso = 1.5F;
             Alimento mAlimento2 = new Alimento();
-            mAlimento2.Nombre = "Queso";
+            mAlimento2.Nombre = "Tomate";
             mAlimento1.Peso = 5F;
 
-            Plato resultado = sut.PrepararPlato(mAlimento1, mAlimento2);
+            Receta recetaEspaguetis = new Receta(mAlimento1, mAlimento2);
+
+            Plato resultado = sut.PrepararPlato(mAlimento1, mAlimento2, recetaEspaguetis);
 
             Plato mPlato = new Plato(mAlimento1, mAlimento2);
             Assert.AreEqual(mPlato, resultado);

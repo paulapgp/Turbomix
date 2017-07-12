@@ -46,6 +46,7 @@
     <Compile Include="IBascula.cs" />
     <Compile Include="ICocina.cs" />
     <Compile Include="Plato.cs" />
+    <Compile Include="Receta.cs" />
     <Compile Include="TurbomixService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

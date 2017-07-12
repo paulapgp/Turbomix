@@ -17,13 +17,21 @@ namespace EjercicioEntregar2
             this.Cocina = _Cocina;
         }
 
-        public Plato PrepararPlato(Alimento mAlimento1, Alimento mAlimento2)
+        public Plato PrepararPlato(Alimento mAlimento1, Alimento mAlimento2, Receta r)
         {
             float Peso1 = Bascula.Pesar(mAlimento1);
             float Peso2 = Bascula.Pesar(mAlimento2);
             Cocina.Calentar(mAlimento1, mAlimento2);
 
-            return new Plato(mAlimento1, mAlimento2);
+            if (Cocina.ComprobarAlimentos(r, mAlimento1, mAlimento2) == true)
+            {
+                return new Plato(mAlimento1, mAlimento2);
+            }
+            else
+            {
+                return null;
+            }
+            
         }
 
     }
