@@ -52,14 +52,14 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="TurbomixTest.cs" />
+    <Compile Include="TurbomixServiceIntegracionTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="CocinaServiceTest.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\EjercicioEntregar2\EjercicioEntregar2.csproj">
+    <ProjectReference Include="..\EjercicioEntregar2\Turbomix.csproj">
       <Project>{7a18d81f-d49a-4d0e-a6e1-bfd1a1480c60}</Project>
-      <Name>EjercicioEntregar2</Name>
+      <Name>Turbomix</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

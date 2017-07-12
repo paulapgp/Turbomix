@@ -6,18 +6,18 @@ using System.Threading.Tasks;
 
 namespace EjercicioEntregar2
 {
-    public class Turbomix
+    public class TurbomixService
     {
         public IBascula Bascula { get; set; }
         public ICocina Cocina { get; set; }
 
-        public Turbomix(IBascula _Bascula, ICocina _Cocina)
+        public TurbomixService(IBascula _Bascula, ICocina _Cocina)
         {
             this.Bascula = _Bascula;
             this.Cocina = _Cocina;
         }
 
-        public Plato PesarYCocinar(Alimento mAlimento1, Alimento mAlimento2)
+        public Plato PrepararPlato(Alimento mAlimento1, Alimento mAlimento2)
         {
             float Peso1 = Bascula.Pesar(mAlimento1);
             float Peso2 = Bascula.Pesar(mAlimento2);
