@@ -24,7 +24,7 @@ namespace EjercicioEntregar2
             this.Calentado = _Calentado;
         }
 
-        public override bool Equals(object obj)
+        public override bool Equals(Object obj)
         {
             if (obj == null)
             {

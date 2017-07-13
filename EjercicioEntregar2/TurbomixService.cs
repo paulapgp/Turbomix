@@ -29,7 +29,7 @@ namespace EjercicioEntregar2
             }
             else
             {
-                return null;
+                throw new Exception();
             }
             
         }

@@ -19,7 +19,7 @@ namespace EjercicioEntregar2
 
             if (mAlimento1.Calentado == true && mAlimento2.Calentado == true)
             {
-                if (r.alimentoNecesario1.Equals(mAlimento1) && r.alimentoNecesario2.Equals(mAlimento2))
+                if (r.alimentoNecesario1.Nombre.Equals(mAlimento1.Nombre) && r.alimentoNecesario2.Nombre.Equals(mAlimento2.Nombre))
                 {
                     coincidenAlimentos = true;
                 }
